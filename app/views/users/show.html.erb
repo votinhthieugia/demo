@@ -1,0 +1,9 @@
+<% page_title("User info") %>
+<h2>Account Information</h2>
+Name: <%= current_object.name %>
+<br/>
+Email: <%= current_object.email %>
+<br/>
+<%= link_to 'Edit', edit_user_path(current_object) %>
+<br/>
+<%= link_to 'Users', users_path %>

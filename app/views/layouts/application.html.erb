@@ -7,10 +7,9 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-  <%- if sign_in? -%>
-    <%= link_to('Sign out', signout_path)  %>
-    <br/>
-  <%- end -%>
+  <div id="menu">
+    <%= render :partial => 'layouts/menu' %>
+  </div>
 
 <%= yield %>
 
